@@ -1422,10 +1422,17 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.20":
-  "integrity" "sha512-MWul1teSPxujEHVwZl4a5HxQ9vVNsjTchVA+xRqv/VYGCuKGAU6UhfrTdF5aBefwD1BHUD8i/zq+O/vyCm/FrA=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.20.tgz"
-  "version" "18.0.20"
+"@types/react-test-renderer@^18.0.0":
+  "integrity" "sha512-C7/5FBJ3g3sqUahguGi03O79b8afNeSD6T8/GU50oQrJCU0bVCCGQHaGKUbg2Ce8VQEEqTw8/HiS6lXHHdgkdQ=="
+  "resolved" "https://registry.npmjs.org/@types/react-test-renderer/-/react-test-renderer-18.0.0.tgz"
+  "version" "18.0.0"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^18.0.21":
+  "integrity" "sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.21.tgz"
+  "version" "18.0.21"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3536,6 +3543,11 @@
     "ajv" "^6.12.3"
     "har-schema" "^2.0.0"
 
+"harmony-reflect@^1.4.6":
+  "integrity" "sha512-HIp/n38R9kQjDEziXyDTuW3vvoxxyxjxFzXLrBr18uB47GnSt+G9D29fqrpM5ZkspMcPICud3XsBJQ4Y2URg8g=="
+  "resolved" "https://registry.npmjs.org/harmony-reflect/-/harmony-reflect-1.6.2.tgz"
+  "version" "1.6.2"
+
 "has-bigints@^1.0.1", "has-bigints@^1.0.2":
   "integrity" "sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ=="
   "resolved" "https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.2.tgz"
@@ -3665,6 +3677,13 @@
   "integrity" "sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA=="
   "resolved" "https://registry.npmjs.org/icss-utils/-/icss-utils-5.1.0.tgz"
   "version" "5.1.0"
+
+"identity-obj-proxy@^3.0.0":
+  "integrity" "sha512-00n6YnVHKrinT9t0d9+5yZC6UBNJANpYEQvL2LlX6Ab9lnmxzIRcEmTPuyGScvl1+jKuCICX1Z0Ab1pPKKdikA=="
+  "resolved" "https://registry.npmjs.org/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "harmony-reflect" "^1.4.6"
 
 "ignore@^4.0.6":
   "integrity" "sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg=="
@@ -5743,12 +5762,34 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react-is@^16.12.0", "react-is@^16.13.1":
+"react-is@^16.12.0", "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^18.2.0":
+"react-is@^18.2.0":
+  "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
+  "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
+  "version" "18.2.0"
+
+"react-shallow-renderer@^16.15.0":
+  "integrity" "sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA=="
+  "resolved" "https://registry.npmjs.org/react-shallow-renderer/-/react-shallow-renderer-16.15.0.tgz"
+  "version" "16.15.0"
+  dependencies:
+    "object-assign" "^4.1.1"
+    "react-is" "^16.12.0 || ^17.0.0 || ^18.0.0"
+
+"react-test-renderer@^18.2.0":
+  "integrity" "sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA=="
+  "resolved" "https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-18.2.0.tgz"
+  "version" "18.2.0"
+  dependencies:
+    "react-is" "^18.2.0"
+    "react-shallow-renderer" "^16.15.0"
+    "scheduler" "^0.23.0"
+
+"react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -6990,6 +7031,7 @@
   "version" "4.8.3"
 
 "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+  "integrity" "sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q=="
   "version" "3.9.10"
 
 "unbox-primitive@^1.0.2":

@@ -16,5 +16,3 @@ export const ProductCard: ProductCardHOCProps = Object.assign(ProductCardHOC, {
   Image: ProductImage,
   Buttons: ProductButtons
 })
-
-export default ProductCard;
